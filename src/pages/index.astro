@@ -11,40 +11,26 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
+		<div style="height: 100vh; display: flex; flex-direction: column;">
+			<main style="flex: 1;">
+				<div style="margin-bottom: 2em;">
+					<img src="/logo.svg" alt="Logo" />
+				</div>
+				<section>
+					<h2 style="font-size: 2em;">会社概要</h2>
+					<p>
+					レジティメイトラボスジェーピーゴウドウガイシャは、NFCテクノロジー、ICチップ、コネクテッドプロダクト、ブロックチェーンソフトウェアに特化したコンサルティングおよび開発を行う企業です。また、クリエイティブ・コンサルティングも手がけ、ブランドとテクノロジーの融合を支援します。
+					</p>
+					<p>
+					主に、米国法人Legitimate, Inc.の日本国内およびアジア市場における事業展開を支援するとともに、日本国内のファッションブランド、音楽レーベル、その他多様な企業とも連携し、最先端のNFC／ICチップ技術を活用した魅力的なコネクテッドプロダクトの企画・開発・展開をサポートしています。
+					</p>
+					<p><strong>所在地：</strong>〒151-0064 東京都渋谷区上原2-42-10 FAREウエハラノイエ W105号室</p>
+					<p><strong>設立日：</strong>2025年1月14日</p>
+					<p><strong>代表者：</strong>ラング ゾエ モーが</p>
+					<p><strong>詳細：</strong><a href="https://legitimate.jp" target="_blank" rel="noopener noreferrer">https://legitimate.jp</a> （※ウェブサイトは機械翻訳による日本語表示です）</p>
+				</section>
+			</main>
+			<Footer />
+		</div>
 	</body>
 </html>
